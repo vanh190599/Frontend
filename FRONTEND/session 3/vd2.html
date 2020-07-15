@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	
+	<style type="text/css">
+		.box1, .box2 , .box3  
+		/*có thể thay là div, -> tác động tát cả div*/
+		{
+			width: 200px; height: 200px;
+			margin: 20px auto;
+		 
+		}
+
+
+		.box1 {border: 1px solid red;
+				/*tác động vào top*/
+				border-top: 1px dashed green;
+		}
+
+		.box2 {border: 1px dashed red;}
+		.box3 {border: 1px dotted red;}
+
+
+		.box4 {width: 200px; margin: auto;
+			   border: 1px solid green;
+			   border-top-width: 0px;
+		}
+
+	</style>
+
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+
+</body>
+</html>

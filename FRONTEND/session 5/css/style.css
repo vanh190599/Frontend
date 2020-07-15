@@ -1,0 +1,201 @@
+body{
+	font-family: Arial;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*reset css mặc định của 1 nố thẻ*/
+ul{	
+	/*bo khoang cach trai*/
+	padding: 0px;
+	/*bo khoang cach tren*/
+	margin: 0px;
+	/*bo dau cham trc the li*/
+	list-style: none;
+}
+a{	
+	/*bo gach chan*/
+	text-decoration: none;
+	/*mau chu*/
+	color: black;
+}
+
+/*khi bao quanh website*/
+.wrapper{
+	/*do rong*/
+	width: 1000px;
+	/*can giua*/
+	margin: auto;
+}
+.menu
+{
+	/*anh nen*/
+	background-image: url('../images/menu.jpg');
+	/*do cao*/
+	line-height: 24px;
+}
+.menu-left{
+	width: 175px;
+	font-size: 11px;
+	text-align: center;
+	/*can trai*/
+	float: left;
+
+}
+.menu-right
+{
+	/*do rong*/
+	/*1000px-175px=825px;*/
+	width: 825px; 
+	/*cho the li hien thi ngang*/
+	display: inline;
+	/*do cao*/
+	line-height: 24px;
+	float: left;
+
+}
+
+.menu-right ul li{
+	/*cho the li hien thi ngang*/
+	display: inline;
+}
+
+.menu-right a{
+	font-weight: bold;
+	color: #dd4e01;
+	padding: 10px;
+}
+
+/*khoi trai*/
+.left{
+	width: 175px;
+	float: left;
+}
+
+/*khoi phai*/
+
+.right
+{
+	/*1000--*/
+	width: 198px;
+	float: left;
+}
+
+/*main*/
+.main{
+	width: 636px;
+	float: left;
+}
+
+.category ul li
+{
+	background-image: url('../images/category.jpg');
+	background-repeat: no-repeat;
+	line-height: 21px;
+	margin-top: 1px;
+}
+.category ul li a{
+	font-weight: bold;
+	color: white;
+	padding-left: 20px;
+
+}
+
+.search{
+	margin-top: 1px;
+}
+.search .txt{
+	width: 120px;
+}
+
+.product {
+	margin-top: 10px;
+	background-image: url('../images/product.jpg');
+	background-repeat: no-repeat;
+	height: 425px;
+}
+.product-title{
+	font-weight: bold;
+	color: #f55701;
+	line-height: 40px;
+	padding-left: 43px;
+}
+
+.product .content ul li img{
+	border: 1px solid #dddddd;
+	padding: 2px;
+	background-color: white;
+	padding-left: 5px;
+}
+
+.product .content ul li{
+	margin-top: 5px;
+}
+
+.static
+{
+	background-image: url('../images/static.jpg');
+	margin-top:10px;
+}
+.static ul
+{
+	padding-left: 50px;
+}
+.static ul li
+{
+	padding-top: 5px;
+}
+.static span{
+	font-weight: bold;
+}
+
+.menu-footer
+{
+	background-image: url('../images/menu_footer.jpg');
+	text-align: center;
+	margin-top: 10px;
+	background-repeat: no-repeat;
+}
+
+.menu-footer ul li{
+	display: inline;
+	line-height: 18px;
+}
+
+
+.menu-footer ul li a{
+	font-weight: bold;
+	color: #b5930b;
+	padding: 10px;
+}
+.menu-footer ul{
+	padding: 5px;
+}
+
+.footer{
+	text-align: center;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #e9c946;
+}
+
+.slide{
+	width: 613px;
+	height: 222px;
+	margin: auto;
+	margin: 15px auto;
+	/*dat khoi nay la diem tua- de khoi text no can thep*/
+	position: relative;
+}
+.text{
+	position: absolute;
+	line-height: 50px;
+	background-color: rgba(0,0,0,0.7);
+	width: 613px;
+ 	bottom: 0px; 
+	color: white;
+	/*padding-left: 20px;*/
+	text-align: center;
+}

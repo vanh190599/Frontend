@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>baitap</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="box1">
+		<div class="box2">
+			<img id="big-img" src="images/1.jpg">
+		</div>
+		<div class="box3">
+			<ul>
+				<li id="1" ><a href=""><img src="images/1.jpg" >Hội thảo trao đổi kinh nghiệm công tác quản lý Trung tâm hành chính công cấp huyện trên địa bàn tỉnh Quảng Ninh</a></li>
+				<li id="2" ><a href=""><img src="images/2.jpg" >UBND TP ủy thác công tác tiếp nhận và giải quyết TTHC năm 2018, triển khai nhiệm vị năm 2020</a></li>
+				<li id="3" ><a href=""><img src="images/3.jpg" >Quy hoạch karaoke, vũ trường trên địa bàn tỉnh Quảng Ninh tầm nhìn 2025,2030 </a></li>
+				<li id="4" ><a href=""><img src="images/4.jpg">Chương trình giao lưu, học tập kinh nghiệm của 15 trung tâm hành chính công trên địa bàn tỉnh Quảng Ninh</a></li>
+			</ul>
+		</div>
+		<div style="clear: both" ></div>
+	</div>
+	<script type="text/javascript">
+		var n=0;
+		setInterval(function(){
+			var slide = new Array()
+				slide[0] = "1";
+				slide[1] = "2";
+				slide[2] = "3";
+				slide[3] = "4";
+				var n = 0;
+			setInterval(function(){
+				document.getElementById(slide[n]).setAttribute("style", "background-color: red");
+				// document.getElementById(slide[n]-1).setAttribute("style", "background-color: none");
+				n++;
+
+			},1000);
+		});
+	</script>
+</body>
+</html>
+	

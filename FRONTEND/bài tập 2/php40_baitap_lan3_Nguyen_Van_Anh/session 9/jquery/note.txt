@@ -1,0 +1,58 @@
+-jquery la 1 javascript framework.
+- Trang chu jquery: https://jquery.com
+- load thu vien jquery vao:
+
+	<script type="ten-file.js"></script>
+
+cu phap Jquery
+	$(document).ready(function() {code} );
+- jquery tac dong vao the html qua thuoc tinh Id hoc Class, cu phap:
+	- $(#tenId).sukien
+	- $(#tenClass).sukien
+	- su kien:
+		.click() -> click chuot vao the html
+		.dbclick() >double click chuot
+		.text(string) -> xuat gia tri thheo kieu text`
+		.html(string) -> xuat gia tri thheo kieu html
+		.val() -> lay gia tri cua form control
+
+- tác động vào thuộc tính của thẻ html:
+	- $("đối tượng").attr("tên thuộc tính", "giá trị")
+- loại bỏ thuộc tính khỏi thẻ hrml
+	- $("đối tượng").removeAttr("tên thuộc tính")
+
+-	MỘT SỐ HÀM TRONG JQ:
+		.hide() -> ẩn đối tượng
+		.hide(duration)
+		.hide(duration, callback)
+			duration: thoi gian thuc hien- mili s
+
+		.show -> hien thi doi tuong
+		.show(duration)
+		.show(duration, callback)
+		.toggle() -> tonng hop cua cac hide va show
+
+- 	thẻ html mờ dần rồi mất đi:
+		.fadeOut()
+		.fadeOut(duration)
+		.fadeOut(duration, callback)
+
+	  	Tổng hợp của facdein và fadeOut
+		.fadeToggle()
+		.fadeToggle(duration)
+		.fadeToggle(duration, callback)
+
+- Hiệu ứng slideUp:
+	slideUp()
+	slideUp(duration)
+	slideUp(duration, callback)
+
+- Hiệu ứng slideDown:
+	slideDown()
+	slideDown(duration)
+	slideDown(duration, callback)
+
+- Hiệu ứng slideToggle:
+	slideToggle()
+	slideToggle(duration)
+	slideToggle(duration, callback)

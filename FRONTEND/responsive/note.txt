@@ -1,0 +1,19 @@
+- Responsive la mot khai niem chi su phu hop cua giao dien ung voi cac co man hinh khac nhau
+- Cac cong nghe de thuc hien responsive:
+	- Su dung HTML5
+	- Nhan dien thiet bi truy cap de tro den website phu hop
+- Lap trinh mobile
+	- Web app
+	- Hybrid app
+		- Phonegap, cordova, ionic
+	- Native app
+- Mot so khai niem:
+	- De thuc hien resposonsive, can dat the sau vao trong the head
+		<meta name="viewport" content="width:device-width">
+	- @media all -> tat ca cac thiet bi
+	- @media screent -> thiet bi la man hinh
+	- max-width -> do rong toi da
+	- min-width -> do rong toi thieu
+	- max-height -> do cao toi da
+	- min-heig -> do cao toi thieu
+- Responsive thuc chat la viec viet lai css ung voi cac co man hinh khac nhau	

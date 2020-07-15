@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd8</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		.box{
+			width: 500px;
+			margin: 0px auto;
+			}
+		#img-main{width: 500px;}
+		ul{
+			 list-style: none;
+			 padding: 0px;
+			 margin: 0px;
+			 text-align: center;
+		}
+		ul li img{
+			width: 85px;
+		}
+		ul li{
+			display: inline;
+			padding:5px;
+		}
+	</style>
+	<div class="box">
+		<img src="images/h1.jpg" id="img-main">
+		<ul>
+			<li><img src="images/h1.jpg" id="img1"></li>
+			<li><img src="images/h2.jpg" id="img2"></li>
+			<li><img src="images/h3.jpg" id="img3"></li>
+			<li><img src="images/h4.jpg" id="img4"></li>
+			<li><img src="images/h5.jpg" id="img5"></li>
+		</ul>
+	</div>
+	<!-- JS -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#img5").click(function(){
+				// lay gia tri cua thuoc tinh src cua id = img
+				var srcImg = $("#img5").attr("src");
+				//thay doi src cua id = img -main
+				$("#img-main").attr("src", srcImg);
+
+				$("#img-main").fadeOut(function(){
+					$("#img-main").attr("src",srcImg);
+					$("#img-main").fadeIn();
+				})
+				//remove thuoc tinh style cua cac atrribute truoc do
+				$("#img1").removeAttr("style");
+				$("#img2").removeAttr("style");
+				$("#img3").removeAttr("style");
+				$("#img4").removeAttr("style");
+				//tac dong vao thuoc tinh stkyy cua img5
+				$("#img5").attr("style", "border: 1px solid red;")
+			})
+			$("#img4").click(function(){
+				// lay gia tri cua thuoc tinh src cua id = img
+				var srcImg = $("#img4").attr("src");
+				//thay doi src cua id = img -main
+				$("#img-main").attr("src", srcImg);
+				//remove thuoc tinh style cua cac atrribute truoc do
+				$("#img1").removeAttr("style");
+				$("#img2").removeAttr("style");
+				$("#img3").removeAttr("style");
+				$("#img5").removeAttr("style");
+				//tac dong vao thuoc tinh stkyy cua img5
+				$("#img4").attr("style", "border: 1px solid red;")
+			})
+			$("#img3").click(function(){
+				// lay gia tri cua thuoc tinh src cua id = img
+				var srcImg = $("#img3").attr("src");
+				//thay doi src cua id = img -main
+				$("#img-main").attr("src", srcImg);
+				//remove thuoc tinh style cua cac atrribute truoc do
+				$("#img1").removeAttr("style");
+				$("#img2").removeAttr("style");
+				$("#img5").removeAttr("style");
+				$("#img4").removeAttr("style");
+				//tac dong vao thuoc tinh stkyy cua img5
+				$("#img3").attr("style", "border: 1px solid red;")
+			})
+				$("#img2").click(function(){
+				// lay gia tri cua thuoc tinh src cua id = img
+				var srcImg = $("#img2").attr("src");
+				//thay doi src cua id = img -main
+				$("#img-main").attr("src", srcImg);
+				//remove thuoc tinh style cua cac atrribute truoc do
+				$("#img1").removeAttr("style");
+				$("#img5").removeAttr("style");
+				$("#img3").removeAttr("style");
+				$("#img4").removeAttr("style");
+				//tac dong vao thuoc tinh stkyy cua img5
+				$("#img2").attr("style", "border: 1px solid red;")
+			})
+				$("#img1").click(function(){
+				// lay gia tri cua thuoc tinh src cua id = img
+				var srcImg = $("#img1").attr("src");
+				//thay doi src cua id = img -main
+				$("#img-main").attr("src", srcImg);
+				//remove thuoc tinh style cua cac atrribute truoc do
+				$("#img2").removeAttr("style");
+				$("#img5").removeAttr("style");
+				$("#img3").removeAttr("style");
+				$("#img4").removeAttr("style");
+				//tac dong vao thuoc tinh stkyy cua img5
+				$("#img1").attr("style", "border: 1px solid red;")
+			})
+
+		})
+	</script>
+</body>
+</html>

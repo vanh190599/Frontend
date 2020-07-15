@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.2.0-web/css/all.min.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/hover-min.css">
+</head>
+<body>
+<div class="container" style="padding-right: 0px !important">
+	<!-- banner -->
+	<div class="row banner">
+		<div class="box1">
+			<div class="languages">
+				<select>
+					<option>Tiếng Việt &nbsp &nbsp</option>
+					<option>English &nbsp &nbsp</option>
+				</select>
+			</div>
+			<div class="search">
+				<input type="text" class="search-box" placeholder="Tìm kiếm..." name="">
+				<a href="#"><i class="icon-search fas fa-search"></i></a>
+			</div>
+		</div>
+	</div>
+	<!-- Menu -->
+	<!-- even-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".title").click(function(){
+				$(".content").slideToggle(1000);
+			});
+		});
+	</script>
+	<!---->
+	<div class="row menu justify-content-center">
+		<div class="b col-md-1.3 button hvr-grow"><a href="#">Trang chủ</a></div>
+		<div>|</div>
+		<div class="b col-md-1.3 button hvr-grow"><a href="#">Giới thiệu</a></div>
+		<div>|</div>
+		<div class="b col-md-1.3 button hvr-grow"><a href="#">Tin tức</a></div>
+				<div>|</div>
+		<div class="b col-md-1.3 button hvr-grow"><a href="#">Sản phẩm</a></div>
+				<div>|</div>
+		<div class="b col-md-1.3 button hvr-grow"><a href="#">Hình ảnh hoạt động</a></div>
+				<div>|</div>
+		<div class="b col-md-1.3 button hvr-grow"><a href="#">Hướng dẫn mua hàng</a></div>
+				<div>|</div>
+		<div class="b col-md-1.3 button hvr-grow"><a href="#">Đối tác</a></div>
+				<div>|</div>
+		<div class="b col-md-1.3 button hvr-grow"><a href="#">Liên hệ</a></div>
+				<div>|</div>
+		<div class="b col-md-1.3 button hvr-grow"><a href="#"><img src="images/cooker.jpg"> 02-SP</a></div>
+	</div>
+	<nav class="menu-responsive">
+		<div class="title">MENU <i class="fas fa-bars"></i></i></div>
+		<div class="content">
+			<ul>
+				<li><a href="#">Trang chủ</a></li>
+				<li><a href="#">Giới thiệu</a></li>
+				<li><a href="#">Tin tức</a></li>
+				<li><a href="#">Sản phẩm</a></li>
+				<li><a href="#">Hình ảnh hoạt động</a></li>
+				<li><a href="#">Hướng dẫn mua hàng</a></li>
+				<li><a href="#">Đối tác</a></li>
+				<li><a href="#">Liên hệ</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- end-menu -->
+	<!-- end-banner -->
+	<div class="row no-margin" style="height: 5px; background-color: #dddddd"> </div>
+
+	<!-- main -->
+		<div class="row no-margin main--1">
+			<div class="col-lg-4 col-md-12 no-padding-left no-padding-right" style="margin-left: -16px;">
+				<ul class="list-group" style="margin-left: 16px;">
+					<li class="list-group-item text1" style="background-color: #77c170">Tin nổi bật</li>
+					<li class="list-group-item">
+						<ul>
+							<li class="dotted"><a class="font-nau" href="#"><img src="images/1.jpg">&nbsp &nbsp CHÈ HỘP HÀ NGUYÊN</a></li>
+							<li class="dotted"><a class="font-nau" href="#"><img src="images/2.jpg">&nbsp &nbsp CHÈ XANH HÀ NGUYÊN</a></li>
+							<li class="dotted"><a class="font-nau" href="#"><img src="images/3.jpg"> &nbsp CHÈ TÚI LỌC HÀ NGUYÊN</a></li>
+							<li class="dotted"><a class="font-nau" href="#"><img src="images/4.jpg"> CHÈ XANH THƯỢNG HẠNG</a></li>
+						</ul>
+					</li>
+					<li class="list-group-item">
+						<ul>
+							<li class="dotted"><a class="font-red bold" href="#"><i class="fas fa-phone"></i> &nbsp &nbsp &nbsp &nbsp 0945 007 686</a></li>
+							<li class="dotted"><a class="font-red bold" href="#"><i class="fas fa-phone"></i> &nbsp &nbsp &nbsp &nbsp 0945 007 686</a></li>
+						</ul>
+					</li>
+					<li class="list-group-item">
+						<ul>
+							<li class="dotted"><a class="font-nau bold" href="#"> <img src="images/yahoo.jpg">Tư vấn khách hàng</a></li>
+							<li class="dotted"><a class="font-nau bold" href="#"> <img src="images/skype.jpg">Chăm sóc khách hàng</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- slide -->
+			<div class="main1-2 col-lg-8 col-md-12 no-padding-right">
+				<img id="slide-show" src="images/slide1.jpg" class="img-thumbnail slide-img">
+			</div>
+				<script type="text/javascript">
+						var slide = new Array();
+						slide[0] = "images/slide2.jpg";
+						slide[1] = "images/slide1.jpg";
+						slide[2] = "images/slide3.jpg";
+						var n = 0;
+						setInterval(function(){
+							$("#slide-show").fadeOut(function(){
+							$("#slide-show").attr("src",slide[n]);
+							$("#slide-show").fadeIn();
+							n++;
+							if(n == 3)
+								n = 0;
+						});
+						},3000);
+				</script>
+		</div>
+		<!-- End slide -->
+		<div class="title1 row no-margin">
+			<div class="title-1">
+				<span><img src="images/la.jpg"></span>
+				<span class="bold font-nau">SẢN PHẨM</span>
+				<span><img src="images/lk.jpg"></span>
+				<span class="bold font-nau"> CHÈ XANH THƯỢNG HẠNG</span>
+			</div>
+		</div>
+		<div class="main2 row no-margin">
+			<!-- main2-1 -->
+			<div class="main2-1 col-lg-4 col-md-12">
+				<div class="main2-1 text-center justify-content-center">
+						<script type="text/javascript">
+							$(document).ready(function(){
+								$("#5").click(function(){
+									var str = $("#5").attr("src");
+									$("#big").fadeOut(function(){
+										$("#big").attr("src", str);
+										$("#big").fadeIn();
+									})
+									$("#1").removeAttr("style");
+									$("#2").removeAttr("style");
+									$("#3").removeAttr("style");
+									$("#4").removeAttr("style");
+
+									$("#5").attr("style","border: 1px solid red;")
+								});
+								$("#3").click(function(){
+									var str = $("#3").attr("src");
+									$("#big").fadeOut(function(){
+										$("#big").attr("src", str);
+										$("#big").fadeIn();
+									})
+									$("#1").removeAttr("style");
+									$("#2").removeAttr("style");
+									$("#4").removeAttr("style");
+									$("#5").removeAttr("style");
+									$("#3").attr("style","border: 1px solid red;")
+								});
+								$("#2").click(function(){
+									var str = $("#2").attr("src");
+									$("#big").fadeOut(function(){
+										$("#big").attr("src", str);
+										$("#big").fadeIn();
+									})
+									$("#1").removeAttr("style");
+									$("#4").removeAttr("style");
+									$("#3").removeAttr("style");
+									$("#5").removeAttr("style");
+									$("#2").attr("style","border: 1px solid red;")
+								});			
+								$("#1").click(function(){
+									var str = $("#1").attr("src");
+									$("#big").fadeOut(function(){
+										$("#big").attr("src", str);
+										$("#big").fadeIn();
+									})
+									$("#4").removeAttr("style");
+									$("#2").removeAttr("style");
+									$("#3").removeAttr("style");
+									$("#5").removeAttr("style");
+									$("#1").attr("style","border: 1px solid red;")
+								});	
+								$("#4").click(function(){
+									var str = $("#4").attr("src");
+									$("#big").fadeOut(function(){
+										$("#big").attr("src", str);
+										$("#big").fadeIn();
+									})
+									$("#1").removeAttr("style");
+									$("#2").removeAttr("style");
+									$("#3").removeAttr("style");
+									$("#5").removeAttr("style");
+									$("#4").attr("style","border: 1px solid red;")
+								});
+							})
+					</script>
+						<div id="box2-1">
+							<img id="big" class="img-thumbnail" src="images/h4.jpg">
+							<ul>
+								<li><img class="sm-img button hvr-grow img-thumbnail" src="images/h1.jpg" id="1"></li>
+								<li><img class="sm-img button hvr-grow img-thumbnail" src="images/h2.jpg" id="2"></li>
+								<li><img class="sm-img button hvr-grow img-thumbnail" src="images/h3.jpg" id="3"></li>
+								<li><img class="sm-img button hvr-grow img-thumbnail" src="images/h4.jpg" id="4"></li>
+								<li><img class="sm-img button hvr-grow img-thumbnail" src="images/h5.jpg" id="5"></li>
+							</ul>
+						</div>
+					</div>				
+			</div>
+			<!-- end main2-1 -->
+			<!-- main2-2 -->
+			<div class="main2-2 col-lg-8 col-md-12">
+				<ul class="list-group">
+					<li class="list-group-item" style="background-color: #77c170">
+						<ul>
+							<li class="bold" style="color: white">CHÈ THANH NHIỆT</li>
+							<li ><b>GIÁ: 130.000 VNĐ</b></li>
+						</ul>
+					</li>
+					<li class="list-group-item">
+						<ul>
+							<li>Công dụng</li>
+							<li>- Giúp giải nhiệt, mát gan, lợi tiểu, hạ huyết áp nhẹ. Dùng cho người đau đầu do huyết áp cao, hoa mắt chóng mặt, sốt xuất huyết, chống táo bón tránh bị trĩ rất hiệu qua, tiểu ít, nước tiểu vàng.</li>
+							<li>- Trà pha ấm thơm ngon giả nhiệt, giúp người lớn trẻ em tránh hoàn toàn táo bón. Uống thay trà mạn không gây mất ngủ.</li>
+							<li>- Thảo Quyết Minh: 65%</li>
+							<li>- Cam Thảo: 15%</li>
+							<li>- Thân Atisô: 10%</li>
+							<li>- Hoa Hòe: 10%</li>
+							<li>Quy cách đóng gói:</li>
+							<li>- Hộp: 10 gói x 10 gram.</li>
+							<li>- Block: 10 hộp.</li>
+							<li>- Thùng carton: 100 hộp</li>
+							<li class="button hvr-grow"><img src="images/muahang.jpg"></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- end main2-2 -->
+		</div>
+		<!-- end-main2 -->
+		<div class="title1 row no-margin">
+			<div class="title-2">
+				<span><img src="images/la.jpg"></span>
+				<span class="bold font-nau">SẢN PHẨM LIÊN QUAN</span>
+			</div>
+		</div>
+		<!-- main3 -->
+	<div class="row main3 no-margin justify-content-center">
+			<ul>	
+				<li class="box-sp text-center button hvr-grow">
+					<ul class="sp-1">
+						<li class="sp"><img src="images/sp5.jpg"></li>
+						<li class="sp">Trà thanh nhiệt</li>
+						<li class="sp">120.000 VNĐ</li>
+						<li class="sp"><a href="#"><img src="images/xem-chi-tiet.jpg"></a></li>
+					</ul>
+				</li>		
+				<li class="box-sp text-center button hvr-grow">
+					<ul class="sp-1">
+						<li class="sp"><img src="images/sp4.jpg"></li>
+						<li class="sp">Trà thanh nhiệt</li>
+						<li class="sp">120.000 VNĐ</li>
+						<li class="sp"><a href="#"><img src="images/xem-chi-tiet.jpg"></a></li>
+					</ul>
+				</li>				
+				<li class="box-sp text-center button hvr-grow">
+					<ul class="sp-1">
+						<li class="sp"><img src="images/sp3.jpg"></li>
+						<li class="sp">Trà thanh nhiệt</li>
+						<li class="sp">120.000 VNĐ</li>
+						<li class="sp"><a href="#"><img src="images/xem-chi-tiet.jpg"></a></li>
+					</ul>
+				</li>				
+				<li class="box-sp text-center button hvr-grow">
+					<ul class="sp-1">
+						<li class="sp"><img src="images/sp4.jpg"></li>
+						<li class="sp">Trà thanh nhiệt</li>
+						<li class="sp">120.000 VNĐ</li>
+						<li class="sp"><a href="#"><img src="images/xem-chi-tiet.jpg"></a></li>
+					</ul>
+				</li>				
+				<li class="box-sp text-center button hvr-grow">
+					<ul class="sp-1">
+						<li class="sp"><img src="images/sp5.jpg"></li>
+						<li class="sp">Trà thanh nhiệt</li>
+						<li class="sp">120.000 VNĐ</li>
+						<li class="sp"><a href="#"><img src="images/xem-chi-tiet.jpg"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- footer -->
+	<div class="row footer no-margin justify-content-center">
+		<ul class="content-footer">
+			<li class="box-content">
+				<ul>
+					<li><a href="#"><u><b>LIÊN KẾT NHANH</b></u></a></li>
+					<li><a href="#">Trang chủ</a></li>
+					<li><a href="#">Giới thiệu</a></li>
+					<li><a href="#">Sản phẩm mới</a></li>
+					<li><a href="#">Sản phẩm bán chạy</a></li>
+					<li><a href="#">Sản phẩm khuyến mãi</a></li>
+					<li><a href="#">Hướng dẫn mua hàng</a></li>
+					<li><a href="#">Tin tức</a></li>
+				</ul>
+			</li>			
+			<li class="box-content">
+				<ul>
+					<li><a href="#"> <u><b>SẢN PHẨM CỦA CHÚNG TÔI</b></u></a></li>
+					<LI><a href="#">Chè đen</a></LI>
+					<li><a href="#">Chè xanh</a></li>
+					<li><a href="#">Chè túi lọc</a></li>
+					<li><a href="#">Chè xanh thượng hạng</a></li>
+					<li><a href="#">Phụ kiện về chè</a></li>
+				</ul>
+			</li>			
+			<li class="box-content">
+				<ul>
+					<li><a href="#"></a><u><b>LIÊN HỆ VỚI CHÚNG TÔI</b></u></li>
+					<LI><a href="#">Trụ sở: CÔNG TY CHÈ HÀ NGUYÊN</a></LI>
+					<li><a href="#">Địa chỉ: Thị trấn Thanh Sơn - Huyện Thanh Sơn - Tỉnh Phú Thọ</a></li>
+					<li><a href="#">Điện thoại: 02103873554/ 02103873538</a></li>
+					<li><a href="#">Fax: 02103873547</a></li>
+				</ul>
+			</li>			
+			<li class="box-content">
+				<ul>
+					<li class="space text-center"><i class="fas fa-star"></i>KẾT NỐI VỚI CHÚNG TÔI</li>
+					<LI class="space text-center">
+						<span><img class="button hvr-grow" src="images/fb.jpg"></span>
+						<span><img class="button hvr-grow" src="images/yt.jpg"></span>
+						<span><img class="button hvr-grow" src="images/mxh.jpg"></span>
+					</LI>
+					<li class="space justify-content-center">
+						<div class="thong-ke1">
+							<div class="thong-ke2">
+								<ul class="text-center">
+									<li>Số lượt truy cập: <b>213378</b></li>
+									<li>Đang online:<b>124</b> </li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- footer2 -->
+	<div class="row footer2-1 justify-content-center no-margin">Bản quyền 2012 - 2020 thuộc về Công ty Chè Hà Nguyên</div>	
+	<div class="row footer2-2 justify-content-center no-margin">Thiết kế bởi ngcvietnam.com</div>
+	</div>
+</div>
+</body>
+</html>

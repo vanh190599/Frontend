@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#fadeOut").click(function(){
+			$("#slide").fadeOut();
+		});
+		$("#fadeIn").click(function(){
+			$("#slide").fadeIn();
+		});
+		$("#fadeToggle").click(function(){
+			$("#slide").fadeToggle(1000);
+		});
+	});
+</script>	
+<fieldset style="width: 700px; margin:50px auto;">
+	<legend>fadeOut, fadeIn, fadeToggle</legend>
+	<div style="margin-bottom: 15px;">
+		<input type="button" id="fadeOut" value="fadeOut">
+		<input type="button" id="fadeIn" value="fadeIn">
+		<input type="button" id="fadeToggle" value="fadeToggle">
+	</div>
+	<img src="images/slide1.jpg" id="slide">
+</fieldset>
+</body>
+</html>

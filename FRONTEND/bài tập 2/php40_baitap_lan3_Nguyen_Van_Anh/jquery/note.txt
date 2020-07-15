@@ -1,0 +1,57 @@
+- Jquery la mot javascript framework
+- Trang chu jquery: http://jquery.com
+- De thuc hien jquery, can phai load thu vien jquery vao website bang cu phap:
+	<script src="tenfile.js"></script>
+- Cu phap jquery:
+	$(document).ready(function(){ code });	
+- Jquery tac dong vao the html thong qua thuoc tinh id hoac class theo cu phap:
+	- $("#tenid").sukien
+	- $(".tenclass").sukien
+	- sukien:
+		.click() -> click chuot vao the html
+		.dbclick() -> double click chuot
+		.text(string) -> xuat gia tri theo kieu text
+		.html(string) -> xuat gia tri theo kieu html
+		.val() -> lay gia tri cua form control
+		$("#ketqua").val(ketqua) ->xuat gia tri ra form control co id=ketqua
+- Tac dong vao thuoc tinh cua the html:
+	$("doituong").attr("tenthuoctinh","giatri")
+- Loai bo thuoc tinh khoi the html
+	$("doituong").removeAttr("tenthuoctinh")
+- Mot so ham trong jquery
+	//---
+	.hide() -> an doi tuong
+	.hide(duration)
+	.hide(duration, callback)
+		duration: thoi gian thuc hien, tinh bang miligiay
+		callback la mot anynomous function
+	.show -> hien thi doi tuong
+	.show(duration)
+	.show(duration, callback)
+	.toogle() -> tong hop cua hide va show
+	//---
+	The html mo dan roi mat di
+	.fadeOut()
+	.fadeOut(duration)
+	.fadeOut(duration, callback)
+	The html hien thi ro dan
+	.fadeIn
+	.fadeIn(duration)
+	.fadeIn(duration, callback)
+	Tong hop cua faceIn va faceOut
+	.fadeToggle()
+	.fadeToggle(duration)
+	.fadeToggle(duration, callback)
+	//---
+	Hieu ung slideUp
+	.slideUp()
+	.slideUp(duration)
+	.slideUp(duration, callback)
+	Hieu ung slideDown
+	.slideDown()
+	.slideDown(duration)
+	.slideDown(duration, callback)
+	Hieu ung slideToggle
+	.slideToggle()
+	.slideToggle(duration)
+	.slideToggle(duration, callback)

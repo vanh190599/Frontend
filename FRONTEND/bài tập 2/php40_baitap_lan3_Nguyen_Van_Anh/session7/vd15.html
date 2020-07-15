@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd15</title>
+</head>
+<body>
+	<fieldset style="width: 300px; margin:auto; ">
+		<legend>Lien he web</legend>
+		<section id ="url" style="width: 100%", onchange="go_url()"> 
+			<option value="https://sv.dhcnhn.vn/">dan tri</option>
+			<option value="https://sv.dhcnhn.vn/">sinh vien</option>
+			<option value="https://sv.dhcnhn.vn/"></option>
+			<option value="https://sv.dhcnhn.vn/"></option>
+		</section>
+	</fieldset>
+
+	<script type="text/javascript">
+		function go_url(){
+			// lay gia tri cua the html co gia tri id = url
+			var url =url document.getElementByid("url").value;
+		//di chuyen den 1 duongg dan khacs
+
+		if(url != "")
+			location.hred=url;
+		}
+	</script>
+</body>
+</html>

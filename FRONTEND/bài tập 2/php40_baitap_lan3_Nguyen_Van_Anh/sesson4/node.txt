@@ -1,0 +1,37 @@
+node.txt
+- Căn giữa thẻ html
+	với các thẻ inline(img, text, span, b, u, i,...)
+	-> đặt thuộc tính Text-align:center
+	- Ouline: mốn căn giữa thẻ ra màn hình :
+		-> đặt thuộc tính css margin :auto ngay chính trong thẻ đó
+		(dk: độ rộng nhỏ hơn cấp cha của nó)
+
+- CSS tác động từ cấp cha đến cấp con:
+	- từ cấp cha có thể goi css của cấp con thuộc trạng thái : hover
+			.txt1{color: red}
+			a: hover .txt1 {ghi de css}
+
+- Màu nền: + màu theo tên tiếng anh
+		   + RGB
+		   + RGBA:	
+		   		+ rgba(tham số, tham số , tham số, available)
+		   		+ tham số trong 0-255
+		   		+ available: 0 - 1
+
+		   	RGBA: làm mờ chính đối tượng/
+
+ - Opacity: làm mở thẻ html -> mờ cả thẻ con của nó
+
+ - độ bóng thẻ html: 
+ 		box-shadow: phải dưới độnhòe màu
+
+ (vd9):  độ bóng TEXT:
+ 				text-shadow:  phải dưới độnhòe màu
+
+- flaot: căn vị trí của thẻ html
+	-float: left
+	-float: right
+-clear: both; -? clear thuộc tính float để các thẻ sau đó không còn phụ thuộc vào thẻ đã căn trước đó.
+
+
+

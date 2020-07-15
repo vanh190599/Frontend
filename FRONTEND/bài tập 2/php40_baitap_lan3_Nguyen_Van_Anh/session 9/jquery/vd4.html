@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd4</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		.box{
+			width: 300px; 
+			height: 300px;
+			border-radius: 300px;
+			border: 1px solid #dddddd;
+		}
+	</style>
+	<fieldset style="width: 300px; margin: 50px auto; height: 500px;">
+		<legend>Jquery</legend>
+		<div style="margin-bottom: 10px;">
+			<input type="button" id="green" value="green">
+			<input type="button" id="red" value="red">
+			<input type="button" id="purple" value="purple">
+			<input type="button" id="yellow" value="yellow">
+		</div>
+		<div class="box"></div>
+	</fieldset>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//bat su kien id = greeb
+			$("#green").click(function(){
+				// tac dong vao class= box-> theem thuoc tinh style cos value
+				$(".box").attr("style", "background-color: green");
+			})
+			$("#red").click(function(){
+				// tac dong vao class= box-> theem thuoc tinh style cos value
+				$(".box").attr("style", "background-color: red");
+			})
+			$("#purple").click(function(){
+				// tac dong vao class= box-> theem thuoc tinh style cos value
+				$(".box").attr("style", "background-color: purple");
+			})
+			$("#yellow").click(function(){
+				// tac dong vao class= box-> theem thuoc tinh style cos value
+				$(".box").attr("style", "background-color: yellow");
+			})
+		})
+	</script>
+</body>
+</html>

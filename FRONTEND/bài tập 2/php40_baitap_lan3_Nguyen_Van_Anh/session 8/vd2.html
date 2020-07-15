@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function layduongdan(){
+            //lay gia tri cua thuoc tinh src
+            var src = document.getElementById("slide").getAttribute("src");
+            alert(src);
+        }
+        function change_image(){
+            //tac dong vao thuoc tinh cua the html co id=slide -> thay doi gia tri cua thuoc tinh nay
+            document.getElementById("slide").setAttribute("src", "images/slide2.jpg");
+        }
+        function border(){
+        	// tac dong vao thuoc tinh style cua the html co id= slide, dat gia tri cho thuoc tinh do
+        	document.getElementById("slide").Attribute("")
+        }
+    </script>
+    <fieldset style="width:700px; margin: 30px auto;">
+        <legend>Get Attribute</legend>
+        <div style="margin-bottom: 5px;">
+            <input type="button" id="get" onclick="layduongdan();" value="Lấy đường dẫn">
+            <input type="button" id="get" onclick="change_image();" value="Thay đổi sang ảnh slide 1">
+        </div>
+        <img src="images/slide1.jpg" id="slide" alt="">
+    </fieldset>
+</body>
+</html>
+
+
+<!-- Thieu vd cuoi -->

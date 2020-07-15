@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//bat su kien click vao the html co id=btn
+		$("#btn").click(function(){
+			//lay value cua id=txt
+			var str = $("#txt").val();
+			//xuat bien str ra class=show
+			// $(".show").text(str);
+			$(".show").html(str);
+		});
+	});
+</script>	
+<fieldset style="width: 300px; margin:30px auto;">
+	<legend>Jquery</legend>
+	<input type="text" id="txt"> 
+	<input type="button" id="btn" value="Click here">
+	<h1 class="show"></h1>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vs4</title>
+</head>
+<body>
+	<script type="text/javascript">
+			function change_images() {
+			var value = document.getElementById('slide').value;
+		}
+	</script>
+
+	<fieldset style="width: 700px; margin: 50px auto;">
+		<legend>change images</legend>
+		<div style="margin-bottom: 5px;">
+			<select id="slide" onchange="change_images();" >
+				<option value="images/slide1.jpg">Slide 1</option>
+				<option value="images/slide2.jpg">Slide 2</option>
+				<option value="images/slide3.jpg">Slide 3</option>
+				<option value="images/slide4.jpg">Slide 4</option>
+			</select>
+		</div>
+	</fieldset>
+</body>
+</html>

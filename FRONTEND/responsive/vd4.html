@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width:device-width">
+</head>
+<body>
+<style type="text/css">
+	body,h1{margin:0px; padding: 0px;}
+	.header{height: 100px; background-color: red;}
+	.left,.right{width: 20%; height: 400px; float: left; background-color: purple;}
+	.main{width: 60%; height: 400px; float: left; background-color: green;}
+	.footer{background-color: yellow; height: 100px; clear: both;}
+	@media all and (max-width: 1024px){
+		/*an khoi right*/
+		.right{display: none;}
+		/*set lai do rong cua khoi main*/
+		.main{width: 80%;}
+	}
+	@media all and (max-width: 800px){
+		/*hien thi khoi right, set lai do rong*/
+		.right{display: block; width: 100%;}
+		/*dat lai do rong cua khoi left*/
+		.left{width: 35%;}
+		/*dat lai do rong cua khoi main*/
+		.main{width: 65%;}
+	}
+	@media all and (max-width: 600px){
+		.left,.main,.right{width: 100%;}
+	}
+</style>	
+<div class="header"><h1>Header</h1></div>
+<div class="left"><h1>Left</h1></div>
+<div class="main"><h1>Main</h1></div>
+<div class="right"><h1>Right</h1></div>
+<div class="footer"><h1>Footer</h1></div>
+</body>
+</html>

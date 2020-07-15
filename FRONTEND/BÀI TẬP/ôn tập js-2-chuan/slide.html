@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slide</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var slide = new Array();
+		slide[0] = "images/slide1.jpg";
+		slide[1] = "images/slide2.jpg";
+		slide[2] = "images/slide3.jpg";
+		var n = 0;
+		setInterval(function(){
+			document.getElementById('slide-show').setAttribute("src", slide[n]);
+			n++;
+			if(n >= slide.length)
+				n = 0;
+		},1000);
+	</script>
+	<div style="width: 700px; margin: auto;"><img src="images/slide1.jpg" id="slide-show"></div>
+</body>
+</html>

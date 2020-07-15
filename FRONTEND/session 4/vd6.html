@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body style="color: black;">
+<style type="text/css">
+	.box{width: 400px; height: 400px; background: green;}
+	nav ul{
+		/*bo khoang cach tren*/
+		padding:0px;
+		/*bo khoang cach tri*/
+		margin:0px;
+		/*bo dau cham truoc the li*/
+		list-style: none;
+		width: 1000px; margin:auto;
+		/*background-color: cyan;*/
+	}
+	nav ul li{
+		/*hien thi the li theo chieu ngang*/
+		 /*display: inline; */
+		 /*line-height: 50px;*/ 
+		 
+		 display: inline-block; 
+		 padding-bottom: 30px;
+
+	}
+	nav ul li a{color:black; text-decoration: none; padding:15px;}
+	nav{position: relative;}
+	nav ul{position: fixed; bottom: 0px;}
+	body{height: 2000px;}
+</style>	
+<nav>
+	<ul>
+		<li><a href="#">Trang chủ</a></li>
+		<li><a href="#">Giới thiệu</a></li>
+		<li><a href="#">Tin tức</a></li>
+		<li><a href="#">Liên hệ</a></li>
+	</ul>
+</nav>
+<div class="box"></div>
+</body>
+</html>

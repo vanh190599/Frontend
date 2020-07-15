@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd1</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<fieldset style="width: 300px; margin:auto; " >
+		<legend>tác động thuộc tính</legend>
+		<div>nhập số</div> <input type="text" style="anh" id="txt" onblur="check()">
+		<div><input type="button" value="Hiển thị" onclick="check()"></div>
+		<h1 id="show"> </h1>
+	</fieldset>
+	<script type="text/javascript">
+		function check()
+		{
+			var str = document.getElementById("txt").value;
+			if(str == "")
+			{
+				document.getElementById("txt").setAttribute("style","border:1px solid red;");
+			}
+			else
+			{
+				document.getElementById("txt").removeAttribute("style");
+				document.getElementById("show").innerHTML = str;
+			}
+		}
+	</script>
+</body>
+</html>

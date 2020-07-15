@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>baitap</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="box1">
+		<div class="box2">
+			<img id="big" src="images/3.jpg">
+		</div>
+		<div class="box3">
+			<ul>
+				<li id="1" ><a href=""><img src="images/1.jpg" id="1a">Hội thảo trao đổi kinh nghiệm công tác quản lý Trung tâm hành chính công cấp huyện trên địa bàn tỉnh Quảng Ninh</a></li>
+				<li id="2" ><a href=""><img src="images/2.jpg" id="2a">UBND TP ủy thác công tác tiếp nhận và giải quyết TTHC năm 2018, triển khai nhiệm vị năm 2020</a></li>
+				<li id="3" ><a href=""><img src="images/3.jpg" id="3a">Quy hoạch karaoke, vũ trường trên địa bàn tỉnh Quảng Ninh tầm nhìn 2025,2030 </a></li>
+				<li id="4" ><a href=""><img src="images/4.jpg" id="4a">Chương trình giao lưu, học tập kinh nghiệm của 15 trung tâm hành chính công trên địa bàn tỉnh Quảng Ninh</a></li>
+			</ul>
+		</div>
+		<div style="clear: both" ></div>
+	</div>
+	<!------------------->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		var n=0;
+		setInterval(function(){
+			switch(n)
+			{
+				case 1: //đặt nền màu ghi
+						document.getElementById("1").setAttribute("style","background-color: #dddddd");
+						//xóa nền trc nó
+						document.getElementById("4").setAttribute("style","background-color: #none");
+						//Jquery		
+						//lấy đường dẫn ảnh nhỏ
+						var str = $("#1a").attr("src");//thay vào ảnh lớn id = big
+						$("#big").attr("src",str);
+						}
+						break;
+				case 2: document.getElementById("2").setAttribute("style","background-color: #dddddd");
+						document.getElementById("1").setAttribute("style","background-color: #none");
+							var str = $("#2a").attr("src");
+							$("#big").attr("src",str);
+						break;
+				case 3: document.getElementById("3").setAttribute("style","background-color: #dddddd");
+						document.getElementById("2").setAttribute("style","background-color: #none");
+							var str = $("#3a").attr("src");
+							$("#big").attr("src",str);
+						break;
+				case 4: document.getElementById("4").setAttribute("style","background-color: #dddddd");
+						document.getElementById("3").setAttribute("style","background-color: #none");
+							var str = $("#4a").attr("src");
+							$("#big").attr("src",str);
+							break;
+			}
+			n++;
+			if(n > 4)
+			{
+				n = 0;
+			}
+		},1000);			
+		})
+
+	</script>
+</body>
+</html>
+	

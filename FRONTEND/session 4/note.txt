@@ -1,0 +1,25 @@
+- Can giua the html
+	- Voi cac the inline (img, text, span, b, u,i ...): muốn căn giữa thẻ -> đặt thuộc tính css text-align:center ở thẻ cha của nó (điều kiện thẻ cha phải là thẻ outline)
+	- Voi cac the ouline: muon can giua the ra man hinh -> dat thuoc tinh css margin:auto ngay chinh trong the do (dieu kien la the do phai co do rong nho hon cap cha cua no)
+- Css tac dong tu cap cha den cap con:
+	- Tu cap cha co the goi css cua cap con thuoc qua trang thai hover
+	VD:
+		.txt1{color:red}
+		a:hover .txt1{ghi de css }
+- Mau nen:
+	- mau theo ten tieng anh
+	- mau RGB
+	- mau RGBA:
+		- rgba(thamso,thamso,thamso,aavaible)
+		- thamso trong khoang tu 0-255
+		- avaible nam trong khoang 0->1
+- opacity: thamso; -> lam mo the html
+	- thamso chay tu 0->1
+- Do bong the html
+	box-shadow: benphai benduoi donhoe mau
+- Do bong text
+	text-shadown: benphai benduoi donhoe mau
+- float: can vi tri cua the html
+	- float:left
+	- float:right
+- clear: both; -> clear thuoc tinh float de cac the sau do khong con phu thuoc vao the da can truoc do	

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+<fieldset style="width: 300px; margin:50px auto;">
+	<legend>Cong 2 so</legend>
+	<table cellpadding="5">
+		<tr>
+			<td>Số 1</td>
+			<td><input type="number" id="so1"></td>
+		</tr>
+		<tr>
+			<td>Số 2</td>
+			<td><input type="number" id="so2"></td>
+		</tr>
+		<tr>
+			<td>Kết quả</td>
+			<td><input type="number" disabled id="ketqua"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="button" id="btn" value="Thực hiện"></td>
+		</tr>
+	</table>
+</fieldset>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//bat su kien click cua id=btn
+		$("#btn").click(function(){
+			//lay value cua id=so1
+			var so1 = $("#so1").val();
+			//lay value cua id=so2
+			var so2 = $("#so2").val();
+			var ketqua = parseInt(so1) + parseInt(so2);
+			//xuat gia tri ra form control co id=ketqua
+			$("#ketqua").val(ketqua);
+		});
+	});
+</script>
+</body>
+</html>

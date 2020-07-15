@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd6</title>
+</head>
+<body>
+	<!-- de thao tac voi thoi gian trong js-> su dung Date
+		vd:  var date = new Date()
+			date.getFullYear() -> nam
+			date.getMonth()
+			date.getDate()
+			date.getDay-> tra ve 0-7 (ung voi ngay trong tuan)
+			date.getMinutes()
+			date.getSecond()
+	 -->
+	
+	<script type="text/javascript">
+		setInterval(function(){
+			var strTime = "";
+
+			var date = new Date();
+			var year = date.getFullYear();
+			var month = date.getMonth();
+			var day = date.getDate();
+			var hours = date.getHours();
+			var minutes = date.getMinutes();
+			var Second = date.getSecond();
+
+			var DayOfMonth  = date.getDay();
+			var strDayofMonth = "";
+			switch(DayOfMonth)
+			{
+				case 1: strDayofMonth = "chur nhat";
+				case 1: strDayofMonth = "thứ 2";
+				case 1: strDayofMonth = "thứ 3";
+				case 1: strDayofMonth = "thứ 4";
+				case 1: strDayofMonth = "thứ 5";
+				case 1: strDayofMonth = "thứ 6";
+				case 1: strDayofMonth = "thứ 7";
+			
+			}
+
+			strTime = year + "/" + month;
+			document.getElementById("time").innerHTML = strTime;
+		},1000)
+	</script>
+		
+	 <fieldset style="width: 400px; margin: auto;">
+	 	<legend>time</legend>
+
+	 	<h1 style="text-align: center;" id = "time"></h1>
+	 </fieldset>
+</body>
+</html>

@@ -1,0 +1,58 @@
+ghichu.txt
+
+border : xác lập đường viền của thẻ html.
+	-border :  độrộng kiểuđườngviền màusắc
+		+ độ rộng: px, cm, ...
+		+ kiểu đường viền: 
+			solid: đường viền liền nét
+			dashed: đường viền là các dấu gạch
+			dotted: đường viền là dấu chấm.
+
+			vd: img{border:10x dashed red; padding: 10px}
+
+	- border-top" : dorong kieuduongvien mausac-> top
+	( tương tự cho right , bottom,...)
+
+	- border-top-width: độ rộng -> độ rộng của đường viền
+	( tương tự : right,...) 
+
+	- border-radius: bo tròn thẻ html các thẻ gốc: traitren phaitren phaiduoi traiduoi.
+		+ border-radius: traitren phaitren traiduoi phaiduoi -> bo tròn theo từng vị trí goc
+		+ border-radius: tất cả các vị trí -> bo tròn tất cả các goc cùng 1 giá trị.
+		+ border-radius: traitren_phaiduoi phaitren_traiduoi.
+
+- important : ưu tiên sử dụng thuộc tính có important nếu có các thuộc tính giống nhau
+
+	ưu tiên: important - id - class - tên thẻ
+
+
+- Overflow : 
+	- scroll: có thanh scroll dể view hết nd bên trong
+	- hidden: ẩn đi nội dung thừa ra.
+
+
+- Ký tự đặc biệt ( html )
+	- &nbsp: khoảng trắng
+	- &copy: ký tự copy right
+	- &gt : ký tự < 
+	- &lt : ký tự >
+
+	web: html special character
+
+- poisition: định vị trí của hẻ html qua các vị trí: 
+	top - right - bottom - left
+		+ position : absolute -> căn chỉnh vị trí website theo các vị trí: top right bottom left
+	***	+ position : relative -> làm điểm tựa
+		+ position : fixed    -> có đính thẻ html ở vị trí nào đó
+=> Quan trọng
+
+ - display: none -> ẩn thẻ html
+ - display: block -> hiển thị thẻ html
+
+ - z-index: thứ tự -> đặt thứ tự hiện thị của thẻ html
+
+ - display:
+ 	+ none
+ 	+ inline
+ 	+ inline-block
+ 	+ block

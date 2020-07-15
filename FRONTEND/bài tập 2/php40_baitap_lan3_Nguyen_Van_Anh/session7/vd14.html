@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd14</title>
+</head>
+<body>
+	<fieldset>
+		<legend>string</legend>
+		<input type="text" id="txt"> <input onclick="test()"; type="button" value="click here">
+		<h1 id="show" ></h1>
+	</fieldset>
+
+	<script type="text/javascript">
+		function test(){
+			var str = document.getElementById("txt").value;
+			document.getElementById("show").innerHTML = str;
+		}
+	</script>
+
+</body>
+</html>

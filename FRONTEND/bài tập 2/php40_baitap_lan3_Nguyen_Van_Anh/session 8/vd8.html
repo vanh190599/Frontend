@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd8</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<!-- 
+	array: mang
+		Array:  + key
+			    + value
+	- khoi tao:
+			var mang = new array()
+			var mang = new array(giatr1, gia tri 2....)
+			- dat gia tri vao phan tu thu i: mang[i] = giatri
+			- lay gia tri tu phan tu thu i: bien = mang[i]
+		- mang.length: do dai
+ -->
+ <script type="text/javascript">
+ 	var slide = new array()
+	 	slide[0] = "images/slide1.jpg";
+	 	slide[1] = "images/slide2.jpg";
+	 	slide[2] = "images/slide3.jpg";
+		slide[3] = "images/slide4.jpg";
+		var n=0;
+		setInterval(function(){
+			document.getElementById("slide_show").setAttribute("src", slide[n])
+			n++;
+			if(n >= slide.length)
+				n = 0;
+		},1000)
+	</script>
+	<fieldset style="width: 700px; margin: 30px auto;">
+		<legend>Side</legend>	
+		<img src="images/slide1.jpg" id="slide_show">	
+	</fieldset>
+</body>
+</html>

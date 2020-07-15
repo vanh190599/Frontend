@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd9</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		.box{
+			width: 700px;
+			margin: 50px auto;
+			position: relative;
+		}
+		.text{
+			line-height: 50px; position: absolute;
+			background-color: rgba(0,0,0,0.5);
+			width: 685px;
+			bottom: 3px;
+			padding-left: 15px;
+			color: white;
+			text-align: center;
+		}
+	</style>
+	<!-- JS -->
+	<script type="text/javascript">
+		//khai báo Array chua duong dan anh
+		var slide = new Array();
+		slide[0] = "images/slide1.jpg";
+		slide[1] = "images/slide2.jpg";
+		slide[2] = "images/slide3.jpg";
+		slide[3] = "images/slide4.jpg";
+		// khai bao arry chua text
+
+		var text = new Array();
+		text[0]	 = "thu2";
+		text[1]	 = "thu3";
+		text[2]	 = "thu4";
+		text[3]	 = "thu5";
+
+		// khai bao bien n luu vi tri anh
+		var n = 0;
+		setInterval(function(){
+			$('#slide').fadeOut(function(){
+				$("#slide").attr("src", slide[n]);
+				//hien thi anh
+				$("#slide").fadeIn();
+
+				$(".text").html(text[n]);
+				n++;
+				if(n == slide.length)
+					n = 0;
+				});
+		},2000);
+	</script>
+	<!-- End JS -->
+	<div class="box">
+		<img src="images/slide4.jpg"  id="slide">
+		<div class="text"></div>
+	</div>
+</body>
+</html>

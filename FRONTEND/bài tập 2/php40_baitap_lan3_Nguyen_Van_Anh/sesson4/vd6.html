@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd6</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<style type="text/css">
+		.box{width: 400px; height: 400px; background-color: green;}
+
+		
+		nav{ 
+			/*bỏ khoảng cách trên*/
+			padding: 0px;
+			/*bỏ khoanrg cách trái*/
+			margin: 0px;
+			width: 1000px;	margin: auto;
+			background-color: black;
+		}
+
+		nav ul li{
+			/* hiển thị thẻ li theo chiều nagn*/
+			display: inline;
+			line-height: 40px;
+			display: inline-block;
+
+		}
+
+
+		nav ul li a{
+			color: white;
+			text-decoration: none;
+			padding: 15px;
+		}
+		nav{position: relative;}
+		nav ul{position: fixed; bottom: 0px;}
+
+		body{
+			height: 2000px;
+		}
+		
+
+
+	</style>
+
+	<nav>
+		<ul>
+			<li> <a href="#">Trang chủ</a></li>
+			<li> <a href="#">Giới thiệu</a></li>
+			<li> <a href="#">Tin tức</a></li>
+			<li> <a href="#">Liên hệ</a></li>
+		</ul>
+	</nav>
+
+	<div class="box"></div>
+</body>
+</html>

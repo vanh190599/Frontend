@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd7</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#slideUp").click(function(){
+				$("#slide").slideUp();
+			});
+			$("#slideDown").click(function(){
+				$("#slide").slideDown();
+			});
+			$("#slideToggle").click(function(){
+				$("#slide").slideToggle(1000);
+			});
+		});
+	</script>
+	<fieldset style="width: 700px; margin: 50px auto;">
+		<legend>slideUp, slideDown, slideToggle</legend>
+		<div>
+			<input type="button" id="slideUp" value="slideUp">
+			<input type="button" id="slideDown" value="slideDown">
+			<input type="button" id="slideToggle" value="slideToggle">
+		</div>
+		<img src="images/slide2.jpg" id="slide">
+	</fieldset>
+</body>
+</html>

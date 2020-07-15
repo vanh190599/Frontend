@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<fieldset>
+		<legend>vd 2</legend>
+		<div><input type="button" value="chuyen anh" onclick="chuyen()"></div>
+		<div><input type="button" value="border" onclick="border()"></div>
+		<img src="images/slide1.jpg" id="slide">
+	</fieldset>
+	<script type="text/javascript">
+		function chuyen()
+		{
+			document.getElementById("slide").setAttribute("src", "images/slide2.jpg")
+		}
+		function border()
+		{
+			document.getElementById("slide").setAttribute("style", "border: 2px solid red;")
+		}
+	</script>
+</body>
+</html>

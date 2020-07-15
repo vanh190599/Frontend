@@ -1,0 +1,98 @@
+note.txt
+-Js là ngôn ngữ phía client
+-Js hoạt động thông qua các cách: 
+	-đặt trong tag <script> <script>
+	-đạt trong file có đuôi .js
+	-đặt trong thuộc tính của thẻ html, VD:one click="Lein javascript"
+-xuất chuỗi, thông báo:
+	- document.write(chuỗi) -> xuất chuỗi lên màn hình.
+	- aleft(chuỗi): alert chuỗi thông báo, chỉ hiện thị nút ok
+	- prompt( chuoi) -> xuất lên thông báo, nhận kus tự từ bàn phím, trả về kí tự đó.
+	- window.confirm(chuoi)-? hiện thi thông báo có 2 nút ok, cancel.\
+- Ghichu trong js:
+	//
+	/**/
+
+- Cú pháp javascript:
+	có thể có dấu ; ở cuối dòng lệnh hoặc có thể k dùng dấu ; ở cuối dòng lệnh
+	- khi khai báo biến có thể dùng từ khóa Var ở đầu tên biến hoặc k.
+- Khai báo biến: 
+	- var tên biến
+		- quy tắc tên biến:   - k gồm ký tự đặc biệt					
+							- số k ddwc đứng đầu tên biến. 
+							- biến k đc trùng với từ khóa js
+		- kiểu: integer
+		- float
+		- bool: true / flase
+		- array
+		- object
+		- string-> có dấu nháy bao quanh giá trị
+- khi nối chuỗi: sử dụng dấu +, khi nối chuối với chuỗi, chuối và biến
+
+
+- phép so sánh trả về True hoặc false:
+	>
+	>=
+	<
+	<=
+	==
+	!=
+- kết hợp các phép so sánh:
+	&& :   1 sai tất cả cùng sai
+	|| : chỉ cần 1 phép trả về true -> phép TRUE
+		vd: T || F -> T
+			T || T ->T
+			F || F -> F
+
+			1T - tất cả T
+- Hàm ísNAN
+	số    - Flase
+	chữ   - True
+- Khối lệnh:
+		if(các phép so sánh ->True)
+		else if{
+			...
+		}
+			...
+
+- Switch Case:
+	switch(giatri)
+	{
+		case khoang-giati-1;
+			code
+		break;
+
+		case khoang-giatri-2;
+			code
+		break;
+	}
+
+- For(int i=0; i<n ; i++)
+
+- While(dk ket thuc)
+{
+	...
+}
+
+- do
+  {
+	...
+  }
+  while(dk kt)
+
+  - Hàm trong JS
+  		- được định nghĩa bằng cú pháp function tenham() {}
+  	- các kiểu hàm:
+  		+ có trả về gt -> return
+  		+ k trả về g
+  		+ có gtri truyền vào
+  		+ hàm k có gtri truyền vào
+  	- để gọi 1 hàm:
+  		+ tenham() -> doi voi ham k có gtri truyền vào
+  		+ tenham(gt1, gt2, ...)
+
+
+  - trong the html  có một số sự kiện dùng để gõ lệnh javascript, vs: onclicl, ondbclick,...
+  - tác động vào thẻ html: documet.getElementById(tenid)
+  	-lấy giá trị: documet.getElementById(tenid).value
+  	-xuất gtri ra thẻ html: documet.getElementById(tenid).

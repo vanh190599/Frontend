@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<fieldset style="width: 300px; margin: 30px auto;height: 400px ">
+		<legend>set color</legend>
+		<div style="margin-bottom: 5px;">
+			<input type="button" value="green" onclick="change_color('green')">
+			<input type="button" value="red" onclick="change_color('red')">
+			<input type="button" value="grey" onclick="change_color('grey')">
+			<input type="button" value="yellow" onclick="change_color('yellow')">
+		</div>
+		<div id="box"></div>
+	</fieldset>
+	
+	<script type="text/javascript">
+		function change_color(color)
+		{
+			switch(color)
+			{
+				case "green": document.getElementByid('box').setAttribute("style", "background-color: green"); break;
+				case "red": document.getElementByid('box').setattribute("style", "background-color: red"); break;
+				case "grey": document.getElementByid('box').setattribute("style", "background-color: grey"); break;
+				case "yellow": document.getElementByid('box').setattribute("style", "background-color: yellow"); break;
+			}
+		}
+	</script>
+</body>
+</html>

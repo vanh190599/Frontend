@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd6</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#fadeIn").click(function(){
+				$("#slide").fadeIn();
+			});
+			$("#fadeOut").click(function(){
+				$("#slide").fadeOut();
+			});
+			$("#fadetoggle").click(function(){
+				$("#slide").fadeToggle(1000);
+			});
+		});
+	</script>
+	<fieldset style="width: 700px; margin: 50px auto;">
+		<legend>fadeIn, fadeOut, fadetoogle</legend>
+		<div>
+			<input type="button" id="fadeIn" value="fadeIn">
+			<input type="button" id="fadeOut" value="fadeOut">
+			<input type="button" id="fadetoggle" value="fadetoggle">
+		</div>
+		<img src="images/slide2.jpg" id="slide">
+	</fieldset>
+</body>
+</html>

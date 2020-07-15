@@ -1,0 +1,104 @@
+<!-- 
+Ghi chu trong html
+- Cau truc cua trang html bao gom cac thanh phan:
+  + Cau hinh cua trang: nam trong the head
+  + Noi dung cua trang (la phan hien thi tren trinh duyet): nam o the body
+- The html se bao gom 2 loai the:
+	- The mo va the dong. VD: <html></html>
+	- Chi co the mo, khong co the dong. VD: <br>
+- Phan cau hinh website: nam trong the head
+	- title: tieu de cua website -> hien thi tren tab cua trinh duyet	
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PHP40</title>
+	<!-- dat bang ma html hien thi theo kieu unicode thi moi hien thi duoc tieng viet -->
+	<meta charset="utf-8">
+</head>
+<!-- 
+- Cac the html co ban:
+	- div: the phan khoi
+	- p: the doan van ban
+	- h1,h2,h3,h4,h5,h6
+	- span: giong the div, khac: bo lai theo noi dung ben trong no
+	- sub: chu nho so voi ben duoi, de ghi ky tu hoa hoc
+	- sup: chu nho so voi ben tren, de ghi ky tu hoa hoc
+	- b: the in dam
+	- u: the gach chan
+	- i: the in nghieng
+	- iframe: load noi dung cua mot website khac vao website hien tai
+	- fieldset: tao khoi bao quanh noi dung ben trong
+		- legend: tieu de cua khoi
+	- a: the lien ket
+		- href="duongdan" -> duong dan lien ket den
+	- img: the load anh
+		- src="duongdan" -> duong dan anh
+	- ul: the danh sach van ban
+		- li: list cac danh sach
+	- table: the tao bang
+		- tr: hang
+		- td: cot
+- Trong the html se co thuoc tinh style su dung de dinh nghia css cho chinh the html do. Mot so thuoc tinh co ban:
+	- background-color: mausac -> set mau nen cho the html
+		- mausac:
+			- mau theo ten tieng anh. VD: green, blue, red, purple, yellow...
+			- Mau the ma RGB
+	- color: mausac -> mau chu
+	- font-size: kichthuoc -> dinh dang co chu
+		- kichthuoc:
+			- tinh bang px
+			- tinh bang %
+	- font-weigth: bold -> in dam
+	- font-style: italic -> in nghieng
+	- text-decoration:underline -> gach chan
+ -->
+<body>
+<!-- <div style="background-color:green; color: white; width: 25%;">Hello world</div>
+<div style="background-color:red; width: 50%;">Thẻ div thứ 2</div>
+<p style="background-color: purple;">Đây là thẻ p thứ 1</p>
+<p style="background-color: yellow">Đây là thẻ p thứ 2</p>
+<h1>Thẻ h1</h1>
+<h2>Thẻ h2</h2>
+<h3>Thẻ h3</h3>
+<h4>Thẻ h4</h4>
+<h5>Thẻ h5</h5>
+<h6>Thẻ h6</h6>
+<p style="font-size: 30px; background-color: blue; width: 50%; color:white;">Hello world</p>
+<span style="background-color: red;">Thẻ span 1</span><span style="background-color: green;">thẻ span 2</span>
+<h1>H<sub>2</sub>0</h1>
+<h1>X<sup>2</sup></h1>
+<b>Thẻ in đậm</b><u>Thẻ in nghiêng</u><i>Thẻ gạch chân</i> -->
+<p style="font-weight: bold;">In đậm</p>
+<p style="font-style: italic;">In nghiêng</p>
+<p style="text-decoration: underline;">Gạch chân</p>
+<iframe src="http://dantri.com.vn" style="width: 700px; height: 300px;"></iframe>
+<fieldset style="width: 400px;">
+	<legend>Thẻ fieldset</legend>
+	<a href="http://dantri.com.vn">Liên kết đến trang dân trí</a><br>
+	<a href="lienhe.html">Liên kết đến trang liên hệ</a><br>
+	<a href="a/a1.html">Liên kết đến trang a1.html</a>
+	<!-- 
+		- Duong dan tuyet doi: la duong dan co protocol (giao thuc) o dau
+		- Duong dan tuong doi: la duong dan khong co giao thuc o dau, su dung de lien ket cac phan cap cha hoac cap con cua no
+	 -->
+</fieldset>
+<fieldset style="width: 300px;">
+	<legend>Thẻ ảnh</legend>
+	<img src="1.jpg" style="width: 400px;">
+</fieldset>
+<ul>
+	<li>Danh sách 1</li>
+	<li>Danh sách 2</li>
+	<li>Danh sách 3</li>
+</ul>
+<table border="1" style="width: 500px; border-collapse: collapse">
+	<tr>
+		<td>Cột 1 - Hàng 1</td><td>Cột 2 - Hàng 1</td>
+	</tr>
+	<tr>
+		<td>Cột 1 - Hàng 2</td><td>Cột 2 - Hàng 2</td>
+	</tr>
+</table>
+</body>
+</html>

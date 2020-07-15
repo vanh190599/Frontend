@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//click id=hide
+		$("#hide").click(function(){
+			$("#slide").hide(1000);
+		});
+		//click id=show
+		$("#show").click(function(){
+			$("#slide").show();
+		});
+		//click id=toggle
+		// $("#toggle").click(function(){
+		// 	$("#slide").toggle();
+		// });
+		// $('#toggle').click(function(){
+		// 	$("#slide").toggle(500);
+		// });
+		$("#toggle").click(function(){
+			$("#slide").toggle(500,function(){
+				alert("ok");
+			});
+		});
+	});
+</script>	
+<fieldset style="width: 700px; margin:50px auto;">
+	<legend>hid, show, toggle</legend>
+	<div style="margin-bottom: 15px;">
+		<input type="button" id="hide" value="hide">
+		<input type="button" id="show" value="show">
+		<input type="button" id="toggle" value="toggle">
+	</div>
+	<img src="images/slide1.jpg" id="slide">
+</fieldset>
+</body>
+</html>

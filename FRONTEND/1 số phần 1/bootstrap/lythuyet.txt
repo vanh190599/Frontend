@@ -1,0 +1,48 @@
+- Bootstrap la mot css framework
+- Trang chu bootstrap: getbootstrap.com
+- De su dung bootstrap, trong trang html can load thu vien css cua bootstrap
+- Bootstrap chia man hinh theo danh khung luoi thanh 12 cot
+- Cac class cua bootstrap dat trong 2 khoi sau:
+	- class="container" -> fix kich thuoc
+	- class="container-fluid" -> full man hinh
+- 12 cot:
+	- class="col-md-socot" -> rong bao nhieu cot, 1 <= socot <=12
+	- md: man hinh co thuong
+	- lg: man hinh co lon
+	- sm: man hinh co nho
+	- xs: man hinh co rat nho
+- Dang khung luoi se bao gom cac hang, cac cot
+	- class="row" -> hang, ben trong hang se co cac cot	
+- Can giua the html:
+	- trong class=row them class: justify-content-center	
+- class="col" -> tu dong chia cot co do rong bang nhau tren mot hang
+- class="col-socot" -> phan so cot khong theo co man hinh	
+- class="card" -> tao khoi card bao quanh
+	card-header -> phan header cua card
+	card-body -> phan noi dung cua card
+	card-footer -> phan chan cua card
+- mau nen
+	bg-primary -> mau xanh
+	bg-danger -> mau do nhat
+	bg-success
+	bg-alert
+	bg-dark -> mau den
+	bg-white -> mau trang
+- mau chu
+	text-primary
+	text-danger
+	text-success
+	text-alert
+	...
+- button
+	btn
+	btn-primary
+	btn-danger
+	btn-success
+	btn-alert	
+- Duong vien
+	border-primary
+	border-danger
+	border-success
+	border-info
+	...	

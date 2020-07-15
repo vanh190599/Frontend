@@ -1,0 +1,335 @@
+body{
+	/*font chu*/
+	font-family: Arial;
+	/*co chu*/
+	font-size: 12px;
+	/*bo khoang cach tren va trai*/
+	margin:0px; 
+	padding:0px;
+}
+/*reset css mac dinh cua mot so the*/
+ul{
+	/*bo khoang cach trai*/
+	padding:0px;
+	/*bo khoang cach tren*/
+	margin:0px;
+	/*bo dau cham truoc the li*/
+	list-style: none;
+}
+a{
+	/*bo gach chan*/
+	text-decoration: none;
+	/*mau chu*/
+	color:black;
+}
+/*khoi bao quanh website*/
+.wrapper{
+	/*do rong*/
+	width: 1000px;
+	/*can giua man hinh*/
+	margin:auto;
+}
+.menu{
+	/*anh nen*/
+	background-image: url('../images/menu.jpg');
+	/*do cao*/
+	line-height: 24px;
+}
+.menu-left{
+	/*do rong*/
+	width: 175px;
+	/*co chu*/
+	font-size: 11px;
+	/*chu can giua*/
+	text-align: center;
+	/*can trai*/
+	float: left;
+}
+.menu-right{
+	/*do rong*/
+	width: 825px;
+	/*can trai*/
+	float: left;
+}
+.menu-right ul li{
+	/*cho the li hien thi ngang*/
+	display: inline;
+}
+.menu-right a{
+	/*chu dam*/
+	font-weight: bold;
+	/*mau chu*/
+	color:#dd4e01;
+	/*khoang cach trai-phai*/
+	padding:10px;
+}
+.left{
+	/*do rong*/
+	width: 175px;
+	/*can trai*/
+	float: left;
+}
+.main{
+	width: 636px;
+	float: left;
+}
+.right{
+	width: 189px;
+	float: left;
+}
+.category ul li{
+	/*anh nen*/
+	background-image: url('../images/category.jpg');
+	/*khong lap*/
+	background-repeat: no-repeat;
+	line-height: 21px;
+	margin-top: 1px;
+}
+.category ul li a{
+	font-weight: bold;
+	/*mau chu*/
+	color:white;
+	/*day trai*/
+	padding-left: 20px;
+}
+.search{
+	margin-top: 1px;
+}
+.search .txt{
+	width: 120px;
+}
+.product{
+	margin-top:10px;
+	background-image: url('../images/product.jpg');
+	background-repeat: no-repeat;
+	height: 425px;
+}
+.product-title{
+	line-height: 40px;
+	font-weight: bold;
+	color: #f55701;
+	padding-left: 43px;
+}
+.product .content ul li img{
+	border:1px solid #bbbbbb;
+	padding:2px;
+	background-color:white;
+	margin-left: 5px;
+}
+.product .content ul li{
+	margin-top: 5px;
+}
+.static{
+	background-image: url('../images/static.jpg');
+	margin-top:10px;
+}
+.static ul{
+	padding-left: 50px;
+}
+.static ul li{
+	padding-top: 5px;
+}
+.static span{
+	font-weight: bold;
+}
+.menu-footer{
+	margin-top: 10px;
+	text-align: center;
+	background-image: url('../images/menu_footer.jpg');
+	background-repeat: no-repeat;
+}
+.menu-footer ul li{
+	display: inline;
+	line-height: 18px;
+}
+.menu-footer ul li a{
+	font-weight: bold;
+	color:#b5930b;
+	padding:10px;
+}
+.menu-footer ul{
+	padding-top: 5px;
+}
+.footer{
+	text-align: center;
+	color:white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #e9c946;
+}
+.slide{
+	width: 612px;
+	height: 222px;
+	margin: 15px auto;
+	/*dat khoi nay lam diem tua*/
+	position: relative;
+}
+.text{
+	position: absolute;
+	line-height: 50px;
+	background-color: rgba(0,0,0,0.6);
+	width: 612px;
+	bottom:0px;
+	color:white;
+}
+.text span{
+	margin-left: 20px;
+}
+.main-box{
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.main-box .title{
+	background: url('../images/main_box.jpg');
+	line-height: 28px;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	color: #f55701;
+	padding-left: 40px;
+}
+.main-product{
+	margin-top: 10px;
+}
+.main-product-img{
+	text-align: center;
+}
+.main-product li{
+	width: 145px;
+	float: left;
+	margin-right: 5px;
+	border:1px solid #e3c54d;
+	border-radius: 10px;
+}
+.main-product img{
+	margin-top: 10px;
+}
+.main-product-title{
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.main-product-desc{
+	font-size: 11px;
+	color:#6f6f6f;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: justify;
+}
+.main-product-link{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #f55701;
+}
+.main-product-link a{
+	color: #f55701;
+}
+.main-news{
+	margin-top: 10px;
+}
+.news-title{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.news-content img{
+	border: 1px solid #dddddd;
+	padding:2px;
+	float: left;
+	margin-right: 5px;
+}
+.main-news li{
+	/*dat diem tua*/
+	position: relative;
+	padding-bottom: 10px;
+}
+.news-link{
+	/*can theo diem tua*/
+	position: absolute;
+	bottom: 15px;
+	right: 0px;
+}
+.news-link a{
+	color:#f55701;
+}
+.line{
+	border-bottom: 1px dotted red;
+}
+.question{
+	margin-top: 10px;
+	width: 185px;
+	height: 224px;
+	background: url('../images/question.jpg');
+}
+.question-title{
+	font-weight: bold;
+	color:#f55701;
+	text-align: center;
+	line-height: 24px;
+}
+.question-content ul{
+	margin-left: 20px;
+	margin-right: 5px;
+}
+.question-content ul li{
+	margin-top: 12px;
+}
+.send-question{
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.support{
+	margin-top: 10px;
+	width: 184px;
+	height: 275px;
+	background-image: url('../images/support.jpg');
+}
+.support-conent ul{
+	padding-top: 40px;
+}
+.support-conent ul li{
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.support-contact ul{
+	padding-top: 35px;
+	padding-left: 35px;
+	font-size: 11px;
+	color:#f55701;
+}
+.support-contact ul li{
+	margin-bottom: 5px;
+}
+.checkmail{
+	margin-top: 10px;
+	width: 184px;
+	height: 179px;
+	background-image: url('../images/checkmail.jpg');
+}
+.checkmail ul{
+	padding-top: 60px;
+	padding-left: 10px;
+}
+.checkmail ul li{
+	margin-bottom: 5px;
+}
+.email{
+	width: 160px;
+}
+.checkmail ul li:last-child{
+	text-align: center;
+}
+.adv{
+	margin-top: 10px;
+	border:1px solid #e3c54d;
+	width: 183px;
+}
+.adv ul li{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}

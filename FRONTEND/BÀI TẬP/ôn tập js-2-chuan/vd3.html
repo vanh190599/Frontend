@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		
+	</style>
+	<div><img src="images/slide1.jpg" id="1"></div>
+	<div>
+		<select onclick="change()" id="slide" >
+			<option value="images/slide2.jpg">anh2</option>
+			<option value="images/slide3.jpg">anh3</option>
+			<option value="images/slide4.jpg">anh4</option>
+		</select>
+	</div>
+	<script type="text/javascript">
+		function change()
+		{
+			var str = document.getElementById('slide').value;
+			document.getElementById('1').setAttribute("src", str);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd1</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<!--
+		js co the tac dong vao thuoc tinh cua the htmk qua thuoc tinh Id  
+		- document.getElementById("ten id").setAttribute("tenthhuoctinh", "giatri")
+		- tac dong lay gia tri cua thuoc tinh:
+		documet.GetElementById("tenid").getAttribute("tenthuoctinh")
+		- loai bo thuoc tinh khoi html
+		documet.GetElementById("tenid").removeAttribute("tenthuoctinh")
+	 -->
+	<fieldset style="width: 300px; margin: 30px auto; height: 500px;">
+		<legend>Javascript</legend>
+		<input type="text" id="txt">	<input type="button"  onclick="check()" onblur="check1()"  value="click here">
+		<h1 id="show"></h1>
+
+	</fieldset>
+
+	<script type="text/javascript">
+		function check() {
+			//lay gia tri cua the
+			var str = document.getElementById("txt").value;
+
+		
+
+			//kiem tra neu txt khong co gia tri thi hien thi duong vien mau do quanh textbox
+			if (str == "") 
+			{
+				//set gia tri vao thuoc tinh style cua the html co id-box
+				document.getElementById("txt").setAttribute("style", "border:1px solid red;");
+			}
+			else
+			{
+				//loai thuoc tinh style ra khoi the html co id-txt
+				document.getElementById("txt").removeAttribute("style");
+				//xuat gia tri vao the html cp id = show
+				document.getElementById("show").innerHTML = str;
+			}
+		}
+	</script>
+</body>
+</html>

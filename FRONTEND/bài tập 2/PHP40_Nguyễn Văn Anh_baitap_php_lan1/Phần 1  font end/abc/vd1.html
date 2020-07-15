@@ -1,0 +1,143 @@
+<!-- //   ( crt + ? )
+Ghi chu trong html:
+- cau truc cua trang html bao gom cac thanh phan 
+	+ cau hinh cua trang nam trong "head"
+	+ noi dung cua trang( la phan hien thi tren trinh duyet ): nam o the "body"
+- the HTML bao gom 2 loai the:
+	+ the mo va the dong, VD: <html></html>,...
+	+ chi co the mo khong co the dong. VD: <br>,...
+- phan cau hinh website
+	+ title : tieu de cua website ( hien thi trinh tab cua trinh duyet )
+
+- cac the html co ban:
+	 * div : the phan khoi
+	 * P: the doan van ban
+	 * h1, h2 , h3, h4, h5, h6.
+	 * span: giống thẻ div, khác: bỏ lại nội dung bên trong nó
+	 * sub: chữ nhỏ so với chữ bên dưới, để kí tự hoa hoc
+	 * sup: chữ nhỏ hơn so với chữ bên trên, để ghi ký tự hoa hoc
+	 * b: thẻ in đậm
+	 * u: gạch	(underline)
+	 * i: nghiêng
+	 * ifram : load nội dung của website khác vào ws hiện tại
+	 * fieldset : tạo khối bao quanh nội dung bên trong
+	 	legend: tiêu để của khối
+	 * a : thẻ liên kết
+	 	-href = " đường dẫn " : đường dẫn liên kết đến.
+	 * img: thẻ load ảnh
+	 	- src = " đường dẫn " : đường dẫn ảnh
+	 * ul : thẻ danh sách văn bản
+	 * td: cột
+	 * tr: hàng
+	 * table: 
+
+
+
+- trong the html se co thuoc tinh "style" su dung the dinh nghia CSS cho chinh the"
+
+HTML do , Mot so Thuoc tính ( nam ben trong html) co ban.
+ * MÀU:
+	- "background-color" : set mau nen cho the html.
+				mau sac: + mau theo tieng anh VD: green, red ,...
+			 			 + mau theo ma RGB
+	- "color :"" ->	màu chữ: 
+
+* "font - size ": kich thuoc -> định dạng cỡ chữ
+		kích thước:	đơn vị: px, %
+* độ rộng "width"
+* font-weight : bold  -> in đậm.
+* font-style  :italic -> nghiêng
+*  text decoration: underline -> gạch chân
+
+
+
+cha liên kết con
+		tên folder/ tên file
+		../tên file.
+
+
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>anhh</title>
+	<!-- dat bang ma html unicode thi moi hien thi duoc tieng viet  <meta charset...> -->
+	<meta charset="utf-8">
+
+</head>
+<body>
+
+	<!-- hien len dao dien -->
+	Nguyễn Văn Anh KHMT2
+
+	<div style="background-color: red; color: white">Hello world</div>
+	<div style="background-color: cyan;">the div 2</div>
+
+	<p> đây là thẻ p1<p>
+	<p> đây là thẻ p2<p>
+	<p style="background-color: yellow" > đây là thẻ p3 </p>
+
+	<h1>h1</h1>
+	<h2>h2</h2>
+	<h3>h3</h3>
+	<h4>h4</h4>
+	<h5>h5</h5>
+	<h6>h6</h6>
+
+	<p style="font-size: 30px; background-color: cyan; width: 50%; color: white " >hello world 30px</p>
+	<p style="font-size: 50px; background-color:green; width: 30%; color: yellow " >hello world 50px</p>
+	
+	<span style="background-color: cyan"> thẻ span 1</span> <span style="background-color: green"> thẻ span 2</span>
+	
+	<p>  H<sub>2</sub>O </p>
+	<p>  X <sup>2</sup> </p>
+	
+	<b> in đậm </b>	<br>
+	<i>nghiêng</i>	<br>
+	<u>underline</u> <br>
+
+	<p style="font-weight: bold; "> CSS </p>
+	<p style="font-style: italic; "> CSS </p>
+	<p style="text-decoration: underline; "> CSS </p>
+
+	<iframe src="https://vtc.vn/ " style="width: 700px, height : 300px" frameborder="0"></iframe>
+
+	<fieldset 	style="width: 400px" >
+				<legend> thẻ fieldset </legend>
+				<a href="https://vtc.vn/"> liên kết đến trang vtc </a>
+				<a href="lienhe.html">  liên kết đến trang liên hệ </a>
+				<a href="a/a1.html"> kích vào để sang a1 </a>
+
+				
+				<!-- 
+					- đường dẫn tuyệt đối: là đường dẫn có protocol( giao thức) ở đầu (có link)
+					 - đường dẫn tương đối là đường dẫn không có giao thức ở đầu sd để lk các file cấp cha or cấp con của nó
+
+				 -->
+
+	</fieldset>
+
+ 	
+ 	<fieldset style="width: 300px" >
+ 		<legend> thẻ anhr</legend>
+ 		<img src="1.jpg" alt="width: 200px;">
+
+ 		
+ 	</fieldset>
+
+	<ul>
+		<li>danh sách 1</li>
+		<li>danh sách 2</li>
+		<li>danh sách 3</li>
+	</ul>
+
+	<table border="1" style="width: 500px; border-collapse: collapse;">
+		<tr>
+			<td> cột 1 - hàng 1</td>	<td>cột 2 - hàng 1</td>
+		</tr
+			<td> cột 1 - hàng 2</td>	<td> cột 2 hàng 2</td>
+	</table>
+
+
+</body>
+</html>

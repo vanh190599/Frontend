@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd5</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//click id=hide
+			$("#hide").click(function(){
+				$("#slide").hide();
+			});
+			$("#show").click(function(){
+				$("#slide").show();
+			});
+			// $("#toggle").click(function(){
+			// 	$("#slide").toggle(5000);
+			// });	
+			$("#toggle").click(function(){
+				$("#slide").toggle(5000, function(){
+					alert("oke");
+				})
+			})
+		});
+	</script>
+	<fieldset style="width: 700px; margin: 50px auto;">
+		<legend>hide, show, toogle</legend>
+		<div>
+			<input type="button" id="hide" value="hide">
+			<input type="button" id="show" value="show">
+			<input type="button" id="toggle" value="toggle">
+		</div>
+		<img src="images/slide2.jpg" id="slide">
+	</fieldset>
+</body>
+</html>

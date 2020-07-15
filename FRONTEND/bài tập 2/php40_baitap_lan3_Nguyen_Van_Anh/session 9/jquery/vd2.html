@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd2</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		//bat su kien Click vao the html co id=btn
+		$(document).ready(function(){
+			$("#btn").click(function(){
+				//lay value cua the html cos id=txt
+				var str = $("#txt").val();
+				// xuat
+				$(".show").text(str);
+				// $(".show").html(str);
+			})
+		})
+	</script>
+	<fieldset style="width: 300px; margin: 30px auto;">
+		<legend>Jquery</legend>
+			<input type="text" id="txt"> <input id="btn" type="button" value="click here">
+			<h1 class="show"></h1>
+		</fieldset>
+</body>
+</html>

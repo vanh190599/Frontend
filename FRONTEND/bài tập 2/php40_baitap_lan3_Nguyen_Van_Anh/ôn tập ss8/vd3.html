@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<style type="text/css">
+		#tron{
+			height: 250px;
+			width: 250px;
+			border: 1px solid red;
+			border-radius: 250px;
+			margin-top: 10px;
+		}
+	</style>
+	<fieldset style="width: 260px; height: 300px; margin: auto;">
+		<legend>Circle-color</legend>
+		<div style="display: flex;">
+			<div><input type="button" value="green" onclick="change_color('green')"></div>
+			<div><input type="button" value="red" onclick="change_color('red')"></div>
+			<div><input type="button" value="cyan" onclick="change_color('cyan')"></div>
+		</div>
+		<div id="tron"></div>
+	</fieldset>
+	<script type="text/javascript">
+		function change_color(color)
+		{
+			switch(color)
+			{
+				case "green":
+					document.getElementById("tron").setAttribute("style","background-color:green");
+				break;
+				case "red":
+					document.getElementById("tron").setAttribute("style","background-color:red");
+				break;
+				case "cyan":
+					document.getElementById("tron").setAttribute("style","background-color:cyan");
+				break;
+			}
+		}
+	</script>
+</body>
+</html>

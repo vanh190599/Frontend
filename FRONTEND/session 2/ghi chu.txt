@@ -1,0 +1,119 @@
+- buổi 2:
+	- trang html có 2 định dạng"
+		+ tên file.html
+		+ tên file.htm 
+	- một số thẻ html:
+		+ table: mặc định không hiển thị đường viền
+			+ thuộc tính:
+				- cellpadding: đơn vị -> khoảng cách từ đường viền đến đầu chữ
+				- border = " đơn vị " - > đường viền
+			- header
+			- footer
+			- aside
+			- nav
+			- content
+			- article
+			- thẻ form: 
+				-form: là thẻ bao bên ngoài của form
+				- text box: thẻ nhập text
+				- radio: chọn lựa radio
+				- email
+				- checkbox
+				- select
+				- file
+				- color
+				- number
+				- date
+				- datetime
+	- định nghĩa css:
+		- sử dụng : style
+		- định nghĩa css trong thẻ style, khi đó có thể tác động được 1 hay nhiều thẻ html cùng 1 lúc
+		- định nghĩa css thoogn qua file có định dang name.css
+		- trong thẻ html có 2 thuộc tính sử dụng để có thể tác động vào css của thẻ html đó thông qua 2 thẻ này
+			+ class = "tag" :  tác động thông qua cấu trúc: .tag{thuoctinh: giatri}
+			+ id	= "tag"  -> tác động qua cấu trúc#\
+				   #tag.{thuoctinh: giatri}
+			- tác động vào css của thẻ html: chỉ cần tên thẻ qua cấu trúc: tên thẻ{thuộc tính: giá trị; thuộc tính 2:giá trị 2}
+
+- ghi chú trong css: sử dụng ký hiệu /* các dòng ghi chú */
+	Ví dụ: 
+	<style type="text/css"> 
+	/* */
+		#gachchan{text-decoration: underline;}
+		#ingnghieng{font-size: italic;}
+		.maudo{color: red}
+		.gachchan{text-decoration: underline;}
+	</style>
+
+	* sự khác nhau giữa class và id"
+		+ class : có thể gọi đươch nhiều lần. VD:
+			<div class="ingnghieng maudo">...</div>
+		+ id : không gọi được nhiều lần
+
+- một số định dạng ảnh: 
+	+ .gif -> độ nén lớn nhất ( dung lượng bé nhất - Logo, icon)
+	+ jpg : độ nén lớn hơn - thường đc sử dụng
+	+ png : nét hơn
+	+ .bmp : nặng nhất
+
+- thuộc tính css: 
+	+ height : đơn vị đo -> độ cao thẻ html (text ở đầu)
+	+ line-height : đơn vị đo -> độ cao thẻ html( text ở giữa)
+	+ background - color : màu sắc -> màu nền
+	+ background: url('đường dẫn ảnh') -> lòa ảnh nền vào thẻ html.
+
+- Màu Sắc:
+	+ màu theo tiếng anh
+	+ RGB : green, blue, red : 3 màu có độ dài 6 ký tự , có dấu #xxxxxx
+		ví dụ: #000000 : đen
+			   #111111 : trắng
+			   #dddddd : màu ghi
+			   #f1f1f1 : màu ghi nhạt hơn
+
+	+ RGBA : 
+	+ CMYK :
+
+- thẻ html:
+	- mặc định annhr nền sẽ lập theo chiều ngang (x) và chiều thẳng đưunsg(y) 
+	- backgroud - repeat: repeat-x; -> chỉ thiết lập theo chiều ngang
+	- backgroud - repeat: repeat-y; -> chỉ thiết lập theo chiều dọc
+	- background - repeat : no - repeat -> k thiết lập theo chiều nào.
+	- background - size : chiều ngang, chiều thẳng đứng -> 2 chiều.
+	- background - size : 2 chiều
+
+
+	- Margin: nhìn từ thẻ html ra bên ngoài
+		- margin : Top , right, bottom, left -> 4 vị trí của thẻ
+		- margin: top_bottom    left_right: -> định nghĩa theo 2 cặp vị trí.
+		- margin: top_right_bottom_left -> định nghĩa chung cho cả 4 vị trí
+			+ margin-top :
+			+ margin-right :
+			+ margin-bottom :
+			+ margin-left: 
+			+ Tự động căn giữa:  - margin-left: auto; margin-right: auto;		
+								 - margin : auto
+ 
+			=> dịch chuyển cả khối ( đầy nền )
+
+		- padding : nhìn từ thẻ html vào bên trong:
+
+			=> co dãn
+
+			->Quan trọng
+
+
+	- font-family: tenfont; ->dat phong chu hien thi
+		+ ten font: + time
+					+ tahoma
+					+ verdana
+					+ arial
+	- tên thẻ, #id, .class:hover{css} -> khi di chuột qua thẻ html có thể định nghĩa lại css
+
+
+	- text Align: vị trí - > căn thẻ html ra các vị trí
+			 - vị trí: lef, right, center
+			 - thẻ html:  là các thẻ inline(bo lại phái bên trong)
+			 	ví dụ:<b> , <b> , span, ui , img , text,.....
+
+
+			 text - line: center -> căn giữa khung của nó.

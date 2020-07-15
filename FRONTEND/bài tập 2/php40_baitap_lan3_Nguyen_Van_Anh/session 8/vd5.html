@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd5</title>
+</head>
+<!-- 
+	hàm setInterval(anynomouse function, duration)-> 
+	 duration: tinh  bang miligiay, 1 giay = 1000 miligiay
+	  vd:setInterval(function() {code}, 1000) -> sau 1 giay se thuc hien functiion
+ -->
+<body>
+	<script type="text/javascript">
+		var n = 0;
+		var id = setInterval(function(){
+			n++;
+			//xuat n ra the html co id = number
+			document.getElementById('number').innerHTML = n;
+			if(n == 5)
+			{
+			clearInterval(id);
+			}
+		},1000)
+
+
+	</script>
+	<h1 id="number" style="text-align: center;"></h1>
+</body>
+</html>

@@ -1,0 +1,20 @@
+Node:
+
+-de su dung bootstrap trong trang html can load thu vien css bootsrap
+-bootstrap chia man hinh thanh khung luoi 12 cot
+- cac class cua bootstrap dat trong 2 khoi sau
+	- class = "container" -> fix kich thuoc
+	- class = "container-fluid" -> full man hinh
+- 12 cot:
+	- class = "col-md-socot"->. rong bao nhieu cot, 1->12
+	- mg : màn hình cỡ thường
+	- lg : màn hình cỡ lớn
+	- sm : màn hình cỡ nhỏ
+	- xs : màn hinh cỡ rất nhỏ
+- dạnh khung lưới sẽ bao gồm các hàng, các cột.
+	- class="row" -> hàng , bên trong hàng sẽ có các cột
+- căn giữa thẻ html: 
+	- trong class = "row" thêm class
+	justify-content-center
+- class="col" : tự động phân chia cột có độ rộng bằng nhau trên một hàng
+- class="col- số cột": phân số cột ko theo cỡ màn hình

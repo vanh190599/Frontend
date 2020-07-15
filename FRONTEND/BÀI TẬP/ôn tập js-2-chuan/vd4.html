@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 style="text-align: center;" id="number"></h1>
+	<script type="text/javascript">
+		var	n=0;
+		var i = setInterval(function(){
+			n++;
+			document.getElementById('number').innerHTML = n;
+			if(n == 5)
+				clearInterval(i);
+	},100);
+	</script>
+</body>
+</html>

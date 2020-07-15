@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<style type="text/css">
+	body{font-family: Arial; font-size: 12px; padding:0px; margin:0px;}
+	.wrapper{width: 1000px; margin:auto;}
+	.header{height: 100px; background-color: #dddddd;}
+	.menu{background-color: black;}
+	.menu ul{padding:0px; margin:0px; list-style: none;}
+	.menu ul li{line-height: 35px; display: inline;}
+	.menu ul li a{color:white; text-decoration: none; padding:10px;}
+	.menu-responsive{background-color: black; display: none;}
+	.menu-responsive ul{padding:0px; margin:0px; list-style-type: none;}
+	.menu-responsive ul li{line-height: 35px; border-top: 1px solid white;}
+	.menu-responsive li a{color:white; text-decoration: none; padding:10px;}
+	.menu-responsive .title{cursor: pointer; padding-right: 15px; color:white; text-align: right; line-height: 35px;}
+	.menu-responsive .content{display: none;}
+	@media all and (max-width: 800px){
+		.wrapper{width: 100%;}
+		/*an menu*/
+		.menu{display: none;}
+		/*hien thi menu-responsive*/
+		.menu-responsive{display: block;}
+	}
+</style>	
+<script type="text/javascript" src=js/jquery-3.4.1.min.js></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".title").click(function(){
+			$(".content").slideToggle(1000);
+		});
+	});
+</script>
+<div class="wrapper">
+	<div class="header">Header</div>
+	<nav class="menu">
+		<ul>
+			<li><a href="#">Trang chủ</a></li>
+			<li><a href="#">Giới thiệu</a></li>
+			<li><a href="#">Tin tức</a></li>
+			<li><a href="#">Sản phẩm</a></li>
+			<li><a href="#">Liên hệ</a></li>
+		</ul>
+	</nav>
+	<nav class="menu-responsive">
+		<div class="title">MENU</div>
+		<div class="content">
+			<ul>
+				<li><a href="#">Trang chủ</a></li>
+				<li><a href="#">Giới thiệu</a></li>
+				<li><a href="#">Tin tức</a></li>
+				<li><a href="#">Sản phẩm</a></li>
+				<li><a href="#">Liên hệ</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+</body>
+</html>

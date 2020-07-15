@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+<body>
+<style type="text/css">
+	.box{width: 500px; margin:0px auto;}
+	#img-main{width: 500px;}
+	ul{padding:0px; margin:0px; list-style: none; text-align: center;}
+	ul li img{width: 85px;}
+	ul li{display: inline; padding: 5px;}
+</style>	
+<div class="box">
+	<img src="images/h1.jpg" id="img-main">
+	<ul>
+		<li><img src="images/h1.jpg" id="img1"></li>
+		<li><img src="images/h2.jpg" id="img2"></li>
+		<li><img src="images/h3.jpg" id="img3"></li>
+		<li><img src="images/h4.jpg" id="img4"></li>
+		<li><img src="images/h5.jpg" id="img5"></li>
+	</ul>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#img5").click(function(){
+			//lay gia tri cua thuoc tinh src cua id=img
+			var srcImg = $("#img5").attr("src");
+			//thay doi thuoc tinh src cua id=img-main
+			$("#img-main").fadeOut(function(){
+				$("#img-main").attr("src",srcImg);
+				$("#img-main").fadeIn();
+			});
+			//remove thuoc tinh style cua cac attribute truoc do
+			$("#img1").removeAttr("style");
+			$("#img2").removeAttr("style");
+			$("#img3").removeAttr("style");
+			$("#img4").removeAttr("style");
+			//tac dong vao thuoc tinh style cua id=img5
+			$("#img5").attr("style","border:2px solid red");
+		});
+
+		});
+</script>
+</body>
+</html>

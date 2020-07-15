@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		.fildset{
+			width: 300px;
+			margin:auto;
+		}
+	</style>
+	<!-- javascript -->
+	<script type="text/javascript">
+		function  cong2so()
+		{
+			var so1 = document.write("so1").value;
+			var so2 = document.write("so2").value;
+			var ketqua = pareInt(so1) + pareInt(so2);
+			var str = so1 + "+" + so2 + "=" + ketqua;
+
+			//xuat gia tri ra the html co id= ketqua
+			document.getElementById("ketqua").innerHTML = str;
+
+		}
+	</script>
+	<fieldset>
+		<legend>Cong 2 so</legend>
+		<table cellpadding="5">
+			<tr>
+				<td>so1</td> <td><input type="number" id="1"></td>
+			</tr>
+			<tr>
+				<td>so2</td> <td><input type="number" id="1"></td>
+			</tr>
+			<tr>
+				<td></td> <td><span id="ketqua" ></span></td>
+			</tr>
+			<tr>
+				<td></td> <td><input onclick="cong2so()"; type="button" value="thuc hien"></td>
+			</tr>
+
+		</table>
+
+	</fieldset>
+</body>
+</html>

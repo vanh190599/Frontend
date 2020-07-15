@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd10</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<style type="text/css">
+		/*tac động vào thẻ a đầu tiên -> tác động vào cấp cha cấp con theo cú pháp: 
+			- cha con con1 con2{css} ;
+		*/
+		
+		div p{color: red;}
+		p   a{color: green;}
+		div.Hi{ font-size: 150%;} // cùng cấp
+
+
+	/* tác động từ cấp cha đến cấp con:
+			 tenthe1 tenthe2 tenthe 3{}
+			 tenthe .tenclass{}
+			 tenthe #tenid{}
+			 */
+
+		.he{background-color: green;}
+		text a.hover{background-color: yellow;}
+
+	/* cái này là ngang cấp*/
+	p.Hi2{font-size: 200%}
+	</style>
+
+
+
+
+	<div class="he" >
+		<p>đây là thẻ p</p>
+	</div>
+
+	<p>
+		<a href="#">hello world</a>
+	</p>
+
+	<div class="Hi"> <a href="#">hello world</a> </div>
+
+
+	<div>
+		<h1 class="Hi2" > Anh</h1>
+	</div>
+</body>
+</html>
